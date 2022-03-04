@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>truYum Login Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" async></script>
+
+      <link rel="stylesheet" href="./assets/styles/style.css">
+      <link rel="stylesheet" href="./assets/styles/login.css">
+
+      <script src="https://kit.fontawesome.com/d134dd7280.js"
+       crossorigin="anonymous" async></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-info sticky-top">
+            <div class="container-fluid">
+            <a class="navbar-brand ms-3 custom-brand" href="index.html">truYum</a><span><img src="./assets/images/logo.png" height="30px" width="30px"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link"  href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active disabled" aria-current="page" href="login.html">login</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <section class="vh-100">
+        <div class="container-fluid body-custom">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <!--image-->
+                <div class="col-md-4 col-lg-6 col-xl-6">
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg" class="img-fluid" alt="Mobile image">
+                </div>
+
+                <!--Login area-->
+                <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                    <form action="">
+                        <!--Buttons facebook & twitter-->
+                        <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+                            <p class="lead fw-normal mb-0 me-3">Sign In with</p>
+                            <button type="button" class="btn btn-primary btn-floating mx-1">
+                                <i class="fab fa-facebook-f"></i>
+                            </button>
+                            <button type="button" class="btn btn-primary btn-floating mx-1">
+                                <i class="fab fa-twitter"></i>
+                            </button>
+                        </div>
+                        <div class="divider d-flex align-items-center my-4">
+                            <!--
+                                my-4 => margin-y : 4
+                                d-flex => dispay : flex
+                            -->
+                            <p class="text-center fw-bold mx-3 mb-0">OR</p>
+                        </div>
+
+                        <!--User name-->
+                        <div class="d-flex flex-row align-items-center mb-2">
+                            <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                            <div class="field d-flex flex-column-reverse mb-3">
+                                <input type="email" name="email" id="email"
+                                    class="form-control" placeholder=" "
+                                >
+                                <label for="email">User Name</label>
+                            </div>
+                        </div>
+                        <!--Password field-->
+                        <div class="d-flex flex-row align-items-center mb-2">
+                            <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                            <div class="field d-flex flex-column-reverse mb-3">
+                                <input type="password" name="pass" id="pass"
+                                    class="form-control" placeholder=" "
+                                >
+                                <label for="pass">User Name</label>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!--Remember me checkbox-->
+                            <div class="form-check mb-0 ms-3">
+                                <input type="checkbox" class="form-check-input me-2" id="check">
+                                <label for="check">Remember me</label>
+                            </div>
+
+                            <div>
+                                <a href="#">Forgot Password?</a>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <div class="text-center text-lg-start mt-4">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    Sign In
+                                </button>
+                            </div>
+                            <div class="ms-auto mb-0 mb-lg-0">
+                                <p class="small fw-bold mt-2 pt-4 nb-0">
+                                    Don't have an account?  <a class="link-danger" href="register.html">
+                                        Register Now
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary">
+            <!--Copyright-->
+            <div class="text-white mb-3 mb-md-0">
+                Copyright &#169 2022. All rights reserved.
+            </div> 
+            <!--right pane-->
+            <div class="icon ms-auto mb-0 mb-lg-0">
+                <a href="#" class="text-white me-4">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="#" class="text-white me-4">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="#" class="text-white me-4">
+                    <i class="fab fa-google"></i>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="https://www.linkedin.com/in/ritwick-samanta-49290a1a8/" class="text-white me-4" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
